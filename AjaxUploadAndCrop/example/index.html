@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+	<title>File upload and crop.</title>
+	<!-- jQuery -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<!-- jCrop plugin -->
+	<script src="assets/js/jcrop/js/jquery.Jcrop.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="assets/js/jcrop/css/jquery.Jcrop.css" type="text/css" />
+	<!-- jQuery Form plugin -->
+	<script src="assets/js/jquery.form.js" type="text/javascript"></script>
+	<!-- Uploader files -->
+	<script src="assets/js/AjaxUploadAndCrop.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="assets/css/AjaxUploadAndCrop.css" type="text/css" />
+</head>
+
+<body>
+  
+ <h1>Ajax upload and crop!</h1>
+  
+<div  id="uploader">
+
+	<!-- UPLOAD FORM -->
+	<form id="upload" action="php/upload.php" enctype="multipart/form-data" method="post">
+		<input type="file" id="image" name="image" />
+		
+		<a href="" class="btn_upload disabled">upload image</a>
+		
+		<img class="loader" src="assets/img/loader.gif" alt="" />
+	</form> 
+
+	<!-- CROP FORM -->
+	<form id="crop" action="php/crop.php" method="post">
+		<p>Crop image</p>
+	
+		<div class="image_wrapper"></div>
+		
+		<input type="hidden" class="filename" name="filename" value="" />
+		
+		<!-- CROP COORDS -->
+		<div id="coords">
+			<input type="hidden" id="x" name="x" />
+			<input type="hidden" id="y" name="y" />
+			<input type="hidden" id="width" name="width" />
+			<input type="hidden" id="height" name="height" />
+		</div>
+		
+		<a href="" class="btn_crop">crop image</a>
+	</form>
+	
+	<!-- SAVE FORM -->
+	<form id="save" action="php/save.php" method="post">
+		<!-- UPLOADED FILE NAME -->
+		<label for="filename">Filename: </label>
+		<input type="text" class="filename" id="filename" name="filename" value="" />
+		
+		<br/>
+		
+		<!-- BIG IMAGE PREVIEW AND PATH -->
+		<label for="filename">Big size path: </label>
+		<input type="text" id="big_path" name="big_path" value="" />
+		<div id="big_preview"></div>
+		
+		<br/>
+		
+		<!-- THUMB PREVIEW AND PATH -->
+		<label for="filename">Thumb size path: </label>
+		<input type="text" id="thumb_path" name="thumb_path" value="" />
+		<div id="thumb_preview"></div>
+	
+		<a href="" class="btn_save">save image</a>
+	</form>
+	
+</div>
+
+</body>
+</html>

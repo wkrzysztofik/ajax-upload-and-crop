@@ -1,0 +1,288 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Ajax Upload and Crop - Simple image uploader with crop option.</title>
+	
+	<meta name="description" content="Thank you for purchasing our Ajax upload and crop plugin. If you have any questions that are beyond the scope of this help file, please feel free to email.">
+	<meta name="author" content="Starfield Studio">
+	<meta name="copyright" content="Starfield Studio">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-10-29T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushPhp.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#333636;color:#499CCB;}
+		::selection{background:#333636;color:#499CCB;}
+		#documenter_sidebar #documenter_logo{background-image:url(http://starfieldstudio.pl/ci/logo-blue-white.png?v=2);}
+		a{color:#2D85CE;}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#1B1D1C;color:#FFFFFF;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ol{border-top:1px solid #212424;}
+		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ol a:hover{background:#333636;color:#499CCB;border-top:1px solid #333636;}
+		#documenter_sidebar ol a.current{background:#333636;color:#499CCB;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#about">1. About</a></li>
+			<li><a href="#features">2. Features</a></li>
+			<li><a href="#usage">3. Usage</a></li>
+			<li><a href="#contact">4. Contact</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Starfield Studio 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Ajax Upload and Crop</h1><h2>Simple image uploader with crop option.</h2><hr><ul><li>Created: 10/28/2012</li><li>latest Update: 10/29/2012</li><li>By: Starfield Studio</li><li><a href=""></a></li><li>Email: <a href="mailto:&#119;&#111;&#106;&#116;&#101;&#107;&#64;&#115;&#116;&#97;&#114;&#102;&#105;&#101;&#108;&#100;&#115;&#116;&#117;&#100;&#105;&#111;&#46;&#112;&#108;">&#119;&#111;&#106;&#116;&#101;&#107;&#64;&#115;&#116;&#97;&#114;&#102;&#105;&#101;&#108;&#100;&#115;&#116;&#117;&#100;&#105;&#111;&#46;&#112;&#108;</a></li></ul><p>Thank you for purchasing our Ajax upload and crop plugin. If you have any questions that are beyond the scope of this help file, please feel free to email.</p></section><section id="about">
+	<h3>1. About</h3><hr class="notop">
+<p>
+	<strong>Ajax Upload and Crop </strong>is plugin dedicated for all Web Developers looking for a script easy to implement in any project based on <strong>PHP</strong> and <strong>jQuery</strong> library. It&#39;s easy to <strong>customizable</strong> and&nbsp;improving. Implementation shouldn&#39;t take more than <strong>15 minutes</strong>.</p>
+<p class="info">
+	The package containst all needed jQuery files and PHP scripts (upload.php, crop.php, resize.php).</p>
+<p>
+	Ajax Upload and Crop plugin requires:</p>
+<ul>
+	<li>
+		jQuery Library (http://jquery.com/)</li>
+	<li>
+		jQuery jCrop Plugin (https://github.com/tapmodo/Jcrop)</li>
+	<li>
+		jQuery Form Plugin (http://www.malsup.com/jquery/form)</li>
+</ul>
+<p>
+	PHP scripts requires:</p>
+<ul>
+	<li>
+		PHP GD</li>
+</ul>
+</section>
+<section id="features">
+	<h3>2. Features</h3><hr class="notop">
+<h4 class="c_4">
+	Script features:</h4>
+<p>
+	- ajax file upload</p>
+<p>
+	- crop option</p>
+<p>
+	- create thumbnail of the selected frame</p>
+<p>
+	- keep image aspect ratio</p>
+<p>
+	- create unique file name</p>
+<p>
+	- keep original image</p>
+<p>
+	-&nbsp;tested in all major browsers</p>
+<p>
+	&nbsp;</p>
+<h4 class="c_4">
+	Configuration options:</h4>
+<p>
+	- set width and height of output images</p>
+<p>
+	- set allowed file extensions</p>
+<p>
+	- set maximum file size</p>
+<p>
+	- set upload directory</p>
+</section>
+<section id="usage">
+	<h3>3. Usage</h3><hr class="notop">
+<p>
+	Sample of using script is in ajax-upload-and-crop directory. &nbsp;&nbsp;</p>
+<p>
+	<strong>Assets directory contains:</strong></p>
+<p>
+	jQuery Library - current version of jQuery library</p>
+<p>
+	jQuery jCrop Plugin - using to select frame to crop</p>
+<p>
+	jQuery Form Plugin - using to Ajax Form Sending</p>
+<p>
+	UploadAndCrop.js - &nbsp;coordinate uploader, jCrop and PHP scripts.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>PHP directory containst:</strong></p>
+<p>
+	upload.php - file upload script</p>
+<p>
+	crop.php - crop uploaded image using PHP GD library</p>
+<p>
+	resize.php - resize uploaded image using PHP GD library</p>
+<p>
+	save.php - example of sending data from last step of uploader</p>
+<p>
+	<strong>config.php</strong> - plugin configuration</p>
+<p>
+	&nbsp;</p>
+<h5>
+	1. config.php</h5>
+<p>
+	You have to create directories for uploaded files. In this example You should create /<strong>uploads/original/</strong>, /<strong>uploads/big/</strong> and <strong>/uploads/thumb/ </strong>directories.</p>
+<p>
+	&nbsp;</p>
+<pre class="brush: php">
+&lt;?php
+
+// FILE INPUT NAME
+$file_input_name = &#39;image&#39;;
+
+// ALLOWED FILE EXTENSIONS
+$extensions = array(&quot;.png&quot;,&quot;.jpg&quot;,&quot;.jpeg&quot;,&quot;.bmp&quot;);
+
+// MAX ALLOWED FILE SIZE
+$max_file_size = 5000000;
+
+// ORIGINAL IMAGES UPLOAD DIRECTORY
+$upload_directory = &#39;../uploads/original/&#39;;
+
+// BIG IMAGES UPLOAD DIRECTORY
+$crop_directory = &#39;../uploads/big/&#39;;
+
+// THUMBS UPLOAD DIRECTORY
+$crop_directory = &#39;../uploads/thumb/&#39;;
+
+
+// BIG IMAGES WIDTH
+$original_width = 600;
+
+
+// BIG IMAGES HEIGHT
+$original_height = 400;
+
+
+// THUMBS WIDTH
+$thumb_width = 200;
+
+?&gt;</pre>
+<p>
+	&nbsp;</p>
+<h5>
+	2. Head of index.html:</h5>
+<p>
+	Include all needed JavaScript and CSS files. You can modify CSS files if You need it. UploadAndCrop.js is also easily customizable.</p>
+<pre class="brush: html">
+&lt;!-- jQuery library --&gt;
+&lt;script src=&quot;assets/js/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;!-- jQuery jCrop plugin --&gt;
+&lt;script src=&quot;assets/js/jcrop/js/jquery.Jcrop.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/js/jcrop/css/jquery.Jcrop.css&quot; type=&quot;text/css&quot; /&gt;
+
+&lt;!-- jQuery Form plugin --&gt;
+&lt;script src=&quot;assets/js/jquery.form.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+&lt;!-- Ajax Upload and Crop files --&gt;
+&lt;script src=&quot;assets/js/UploadAndCrop.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/uploadandcrop.css&quot; type=&quot;text/css&quot; /&gt;</pre>
+<p>
+	&nbsp;</p>
+<h5>
+	3. Body of index.html</h5>
+<p>
+	Default template of uploader forms. The next steps are: upload -&gt; crop -&gt; save.</p>
+<pre class="brush: html">
+&lt;div  id=&quot;uploader&quot;&gt;
+  &lt;!-- UPLOAD FORM --&gt;
+  &lt;form id=&quot;upload&quot; action=&quot;php/upload.php&quot; enctype=&quot;multipart/form-data&quot; method=&quot;post&quot;&gt;
+    &lt;input type=&quot;file&quot; id=&quot;image&quot; name=&quot;image&quot; /&gt;
+    &lt;a href=&quot;&quot; class=&quot;btn_upload disabled&quot;&gt;upload image&lt;/a&gt;
+    &lt;img class=&quot;loader&quot; src=&quot;assets/img/loader.gif&quot; alt=&quot;&quot; /&gt;
+  &lt;/form&gt; 
+
+
+  &lt;!-- CROP FORM --&gt;
+  &lt;form id=&quot;crop&quot; action=&quot;php/crop.php&quot; method=&quot;post&quot;&gt;
+    &lt;p&gt;Crop image&lt;/p&gt;
+    &lt;div class=&quot;image_wrapper&quot;&gt;&lt;/div&gt;
+    &lt;input type=&quot;hidden&quot; class=&quot;filename&quot; name=&quot;filename&quot; value=&quot;&quot; /&gt;
+
+    &lt;!-- CROP COORDS --&gt;
+    &lt;div id=&quot;coords&quot;&gt;
+      &lt;input type=&quot;hidden&quot; id=&quot;x&quot; name=&quot;x&quot; /&gt;
+      &lt;input type=&quot;hidden&quot; id=&quot;y&quot; name=&quot;y&quot; /&gt;
+      &lt;input type=&quot;hidden&quot; id=&quot;width&quot; name=&quot;width&quot; /&gt;
+      &lt;input type=&quot;hidden&quot; id=&quot;height&quot; name=&quot;height&quot; /&gt;
+    &lt;/div&gt;
+
+
+    &lt;a href=&quot;&quot; class=&quot;btn_crop&quot;&gt;crop image&lt;/a&gt;
+  &lt;/form&gt;
+
+
+  &lt;!-- SAVE FORM --&gt;
+  &lt;form id=&quot;save&quot; action=&quot;php/save.php&quot; method=&quot;post&quot;&gt;
+    &lt;!-- UPLOADED FILE NAME --&gt;
+    &lt;label for=&quot;filename&quot;&gt;Filename: &lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;filename&quot; id=&quot;filename&quot; name=&quot;filename&quot; value=&quot;&quot; /&gt;
+
+    &lt;br/&gt;
+
+    &lt;!-- BIG IMAGE PREVIEW AND PATH --&gt;
+    &lt;label for=&quot;filename&quot;&gt;Big size path: &lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;big_path&quot; name=&quot;big_path&quot; value=&quot;&quot; /&gt;
+    &lt;div id=&quot;big_preview&quot;&gt;&lt;/div&gt;
+
+    &lt;br/&gt;
+
+    &lt;!-- THUMB PREVIEW AND PATH --&gt;
+
+    &lt;label for=&quot;filename&quot;&gt;Thumb size path: &lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;thumb_path&quot; name=&quot;thumb_path&quot; value=&quot;&quot; /&gt;
+    &lt;div id=&quot;thumb_preview&quot;&gt;&lt;/div&gt;
+
+    &lt;a href=&quot;&quot; class=&quot;btn_save&quot;&gt;save image&lt;/a&gt;
+  &lt;/form&gt;
+&lt;/div&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	You shouldn&#39;t have any problems with the installation. Example in the package should illustrate everything You need to know. If you have any problems, please contact us.</p>
+</section>
+<section id="contact">
+	<h3>4. Contact</h3><hr class="notop">
+<p>
+	Author: <strong>Wojciech Krzysztofik</strong></p>
+<p>
+	E-mail:&nbsp;<a href="mailto:&#119;&#111;&#106;&#116;&#101;&#107;&#64;&#115;&#116;&#97;&#114;&#102;&#105;&#101;&#108;&#100;&#115;&#116;&#117;&#100;&#105;&#111;&#46;&#112;&#108;">&#119;&#111;&#106;&#116;&#101;&#107;&#64;&#115;&#116;&#97;&#114;&#102;&#105;&#101;&#108;&#100;&#115;&#116;&#117;&#100;&#105;&#111;&#46;&#112;&#108;</a></p>
+<p>
+	Facebook:&nbsp;<a href="http://facebook.com/unholy69">https://www.facebook.com/starfieldstudio</a></p>
+</section>
+
+	</div>
+</body>
+</html>
